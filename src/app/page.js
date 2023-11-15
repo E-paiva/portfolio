@@ -1,95 +1,38 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from 'src/style/homePage.module.css'
+import ConatinerFlip from './components/ContainerFlip'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <section className={styles.heroContainer} id="home">
+        <div class="inicio">
+          <div><img src="./icons/logo_inicio.svg" className={styles.logo} alt="" /></div>
+
+          <div className={styles.heroTitle}>
+            <h1 className={styles.flexTitle}>
+              <div className={styles.title}>Hi, I'm Evellyn</div>
+              <div className={styles.title}>an architect turned a Developer</div>
+              <ConatinerFlip />
+            </h1>
+          </div>
+
+          <div className={styles.btn}>
+            <a href="#contacts" className={styles.contactLink}> Contact me </a>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className={styles.navBar}>
+          <div className={styles.navContainer}>
+            <div className={styles.navLinks}>
+              <a href="#home" className={styles.link}>Home</a>
+              <a href="#about_me" className={styles.link}>About me</a>
+              <a href="#projects" className={styles.link}>Projects</a>
+              <a href="#contacts" className={styles.link}>Contacts</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

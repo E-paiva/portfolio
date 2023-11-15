@@ -1,0 +1,72 @@
+/*----------> Import Font <----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat&display=swap');
+
+
+/*----------> Variáveis <----------*/
+
+:root{
+
+  --primary-color: #000;
+  --secondary-color: #C43024;
+  --tertiary-color: #0365BA;
+  --details-color: #F9A402;
+  --bg-color: #F2D8B3;
+
+  --fontfamily-H: 'Baumans', sans-serif;
+  --fontfamily-p: 'Montserrat', sans-serif;
+
+  scroll-behavior: smooth;
+
+}
+
+/*----------> Tipografia <----------*/
+
+h1{
+  font-family: var(--fontfamily-H);
+  font-size: 3.75rem;
+  font-weight: 400;
+}
+
+h2{
+  font-family: var(--fontfamily-H);
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+
+h3{
+  font-family: var(--fontfamily-H);
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+h4{
+  font-family: var(--fontfamily-H);
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+p{
+  font-family: var(--fontfamily-p);
+  font-size: 1.0rem;
+  
+}
+
+/*----------> Layout <----------*/
+
+*{
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+/* body{
+  ;
+} */
+
+footer{
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--fontfamily-p);
+  
+}
