@@ -5,7 +5,7 @@
 
 /*----------> Variáveis <----------*/
 
-:root{
+:root {
 
   --primary-color: #000;
   --secondary-color: #C43024;
@@ -22,51 +22,51 @@
 
 /*----------> Tipografia <----------*/
 
-h1{
+h1 {
   font-family: var(--fontfamily-H);
   font-size: 3.75rem;
   font-weight: 400;
 }
 
-h2{
+h2 {
   font-family: var(--fontfamily-H);
   font-size: 2.75rem;
   font-weight: 400;
 }
 
-h3{
+h3 {
   font-family: var(--fontfamily-H);
   font-size: 2.25rem;
   font-weight: 400;
 }
 
-h4{
+h4 {
   font-family: var(--fontfamily-H);
   font-size: 1.8rem;
   font-weight: 200;
 }
 
-p{
+p {
   font-family: var(--fontfamily-p);
   font-size: 1.0rem;
-  
+
 }
 
 /*----------> Layout <----------*/
 
-*{
+* {
   margin: 0;
+}
+
+body {
   background-color: var(--bg-color);
 }
 
-/* body{
-  ;
-} */
 
-footer{
+footer {
   margin: 20px auto;
   padding: 10px;
   text-align: center;
   font-family: var(--fontfamily-p);
-  
+
 }
