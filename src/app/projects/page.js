@@ -1,9 +1,5 @@
-
-import React, { useClient } from 'react';
-
 export default function ContainerFlip() {
-    useClient
-    // const [position, setPosition] = useState(0);
+
     
 
  
