@@ -15,11 +15,12 @@ export default function Home() {
           <div><img src="./icons/logo_inicio.svg" className={styles.logo} alt="" /></div>
 
           <div className={styles.heroTitle}>
-            <h1 className={styles.flexTitle}>
-              <div className={styles.title}>Hi, I'm Evellyn</div>
-              <div className={styles.title}>an architect turned a Developer</div>
+            <div className={styles.flexTitle}>
+              <div ><h1>Hi, I'm Evellyn</h1></div>
+              <div ><h1>an architect turned Developer</h1></div>
               <ConatinerFlip />
-            </h1>
+
+            </div>
           </div>
 
           <div className={styles.btnContactLink}>
@@ -180,11 +181,11 @@ export default function Home() {
           <div className={styles.contactsFormContainer}>
             <form action="#" className={styles.contactsForm}>
               <legend><h2>Contact me</h2></legend>
-              <label for="name">Name:</label>
+              <label htmlFor="name">Name:</label>
               <input className={styles.inputContainer} type="text" id="name"/>
-              <label for="email">Email:</label>
+              <label htmlFor="email">Email:</label>
               <input className={styles.inputContainer} type="email" id="email" />
-              <label for="text">Message:</label>
+              <label htmlFor="text">Message:</label>
               <input className={styles.inputContainer} type="text" id="text" />
 
               <input
