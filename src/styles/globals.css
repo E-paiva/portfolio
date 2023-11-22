@@ -11,7 +11,8 @@
   --secondary-color: #C43024;
   --tertiary-color: #0365BA;
   --details-color: #F9A402;
-  --bg-color: #F2D8B3;
+  --bg-color: #FFF0E5;
+  /* //--bg-color: #F2D8B3; */
 
   --fontfamily-H: 'Baumans', sans-serif;
   --fontfamily-p: 'Montserrat', sans-serif;
@@ -56,10 +57,12 @@ p {
 
 * {
   margin: 0;
+  max-width: 100vw;
 }
 
 body {
   background-color: var(--bg-color);
+  
 }
 
 

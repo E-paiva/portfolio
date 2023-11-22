@@ -1,12 +1,16 @@
-
+'use client';
 import Image from 'next/image'
 import styles from 'src/styles/homePage.module.css'
 import ConatinerFlip from './components/ContainerFlip'
+import CardsProjects from './components/CardsProjects'
+
 
 
 
 export default function Home() {
   //useClient();
+
+  
 
   return (
     <main className={styles.main}>
@@ -98,14 +102,14 @@ export default function Home() {
       <section className={styles.projects} id="projects">
         <div className={styles.projectsHeader}>
           <div className={styles.btnNav}>
-            <a href="#home"><img src="logo_menu.svg" alt="" /></a>
+            <a href="#home"><img src="./icons/logo_menu.svg" alt="" /></a>
           </div>
           <div className={styles.projectsTitle}>
             <h2>Projects</h2>
           </div>
         </div>
 
-        <div className={styles.display_card}>
+        {/* <div className={styles.display_card}>
           <div className={styles.bgBlue}>
             <article className={styles.cards }>
               <img src="./icons/mockup.png" alt="" />
@@ -165,7 +169,17 @@ export default function Home() {
               </div>
             </article>
           </div>
-        </div>
+        </div> */}
+        <div className={styles.display_card}>
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          </div>
+        
+        
       </section>
 
       <section className={styles.contacts} id="contacts">

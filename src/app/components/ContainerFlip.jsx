@@ -55,7 +55,7 @@ return <div className={styles.container}>
     <li className={styles.item}><h1>and Plant lover 🌱</h1></li>
     <li className={styles.item}><h1>and Dedicated Episode Explorer 🎬</h1></li>
     <li className={styles.item}><h1>and lover of Home Cooking 🍲</h1></li>
-    <li className={styles.item}><h1>and Searcher of Beautiful Landscapes 🏞️</h1></li>
+    <li className={styles.item}><h1>and Travel Itinerary Maker 📍</h1></li>
    
   </ul></div>
 </div>
