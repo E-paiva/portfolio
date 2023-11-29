@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from 'src/styles/homePage.module.css'
 import ConatinerFlip from './components/ContainerFlip'
 import CardsProjects from './components/CardsProjects'
+import ContactForm from './components/contactForm';
 
 
 
@@ -60,11 +61,9 @@ export default function Home() {
         <div className={styles.about_meContent}>
           <div className={styles.about_meTxt}>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga
-              iure ab velit officiis autem facilis minus labore rerum impedit
-              quo sint reiciendis deleniti eius alias, iste nisi doloribus
-              adipisci!
+            My name is Evellyn. I'm a person who tries to see the good side of situations. When things don't go to plan, I think about how to get around them, concentrating on solving the problem. <br/>
             </p>
+            
           </div>
 
           <div className={styles.about_meImgContainer}>
@@ -74,23 +73,25 @@ export default function Home() {
           <div className={styles.about_meSkills}>
             <div className={styles.skillsTxt}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                velit asperiores quibusdam corrupti ex laborum quis quisquam,
-                ullam ad, facilis minus est incidunt assumenda, ut architecto
-                ratione culpa omnis dolorem?
+              My professional career started in architecture. Now, I'm starting a career in software development, give a unique perspective to technology, combining creativity, technical skills and organization based on all
+            different experiences in multidisciplinary teams and projects in other areas.
               </p>
             </div>
             <div className={styles.skillsApps}>
-              <div className={styles.appsHtml0}>
-                <img src="./icons/iconHtml.png" alt="" />
-              </div>
-              <div className={styles.appsCss0}><img src="./icons/icon-css.png" alt="" /></div>
-              <div className={styles.appsJs0}>
-                <img src="./icons/icons_javascrip.png" alt="" />
-              </div>
-              <div className={styles.appsFigma0}>
-                <img src="./icons/icon-figma.png" alt="" />
-              </div>
+              <div className={styles.appsNode}><img src="./icons/logo-node.svg" alt="" /></div>
+              <div className={styles.appsMongo}><img src="./icons/logo-mongo.svg" alt="" /></div>
+              <div className={styles.appsReact}><img src="./icons/logo-react.png" alt="" /></div>
+              <div className={styles.appsNext}><img src="./icons/logo-next.svg" alt="" width={120}/></div>
+              <div className={styles.appsJs0}> <img src="./icons/icons_javascrip.png" alt="" /></div>
+              <div className={styles.appsHtml0}><img src="./icons/logo-html.png" alt="" /></div>
+                
+              
+              <div className={styles.appsCss0}> <img src="./icons/icon-css.png" alt="" /></div>
+              
+              <div className={styles.appsFigma}><img src="./icons/icon-figma.png" alt="" /></div>
+              <div className={styles.appsGitHub}><img src="./icons/mdi_github.png" alt="" /></div>
+                
+              
             </div>
           </div>
         </div>
@@ -210,6 +211,8 @@ export default function Home() {
             </form>
           </div>
 
+
+
           <div className={styles.socialContainer}>
             <div className={styles.social}>
               <h2>Follow me</h2>
@@ -219,7 +222,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <ContactForm/>
       </section>
+
+
 
       <footer>2023 Designed by Evellyn</footer>
     </main>

@@ -2,8 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
 
- // Add basePath
-  
+ // Add basePath 
+ //basePath: '/github-pages',
+
 }
 
 
