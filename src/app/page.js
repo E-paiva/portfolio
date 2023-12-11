@@ -70,7 +70,7 @@ export default function Home() {
           </div>
 
           <div className={styles.about_meImgContainer}>
-            <img src="./icons/frame.png" alt="" className={styles.profileImg} />
+            <img src="../icons/frame.png" alt="" className={styles.profileImg} />
           </div>
 
           <div className={styles.about_meSkills}>
