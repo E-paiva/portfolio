@@ -339,6 +339,7 @@
     flex-direction: column;
     width: 30rem;
     font-family: var(--fontfamily-p);
+    font-size: 1rem;
 }
 
 .inputContainer {
@@ -357,6 +358,8 @@
     height: 4rem;
     align-self: center;
     margin: .5rem;
+    font-family: var(--fontfamily-p);
+    font-size: 1rem;
 
 }
 
