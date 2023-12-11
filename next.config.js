@@ -3,6 +3,10 @@ const nextConfig = {
     reactStrictMode: true,
    output:'export',
    distDir:'dist',
+   experimental: {
+    images: true,
+    
+  },
 
    
  // Add basePath 
