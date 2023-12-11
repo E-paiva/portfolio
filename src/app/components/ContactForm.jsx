@@ -1,6 +1,4 @@
-
-
-import styles from 'src/styles/homePage.module.css'
+import styles from '@/styles/contact.module.css'
 import {  useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 

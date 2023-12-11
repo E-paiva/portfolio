@@ -1,5 +1,5 @@
 'use client';
-import styles from 'src/styles/containerFlip.module.css'
+import styles from '@/styles/containerFlip.module.css'
 
 import React, {  useEffect, useState } from 'react';
 

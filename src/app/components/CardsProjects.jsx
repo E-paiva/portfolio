@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from 'src/styles/card.module.css'
+import styles from '@/styles/card.module.css'
 
 export default function CardsProjects() {
   const [isActive, setIsActive] = useState(true);

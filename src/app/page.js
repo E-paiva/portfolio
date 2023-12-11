@@ -1,6 +1,9 @@
 'use client';
+import 'headers';
 import Image from 'next/image'
-import styles from 'src/styles/homePage.module.css'
+
+
+import styles from '@/styles/homePage.module.css'
 import ConatinerFlip from './components/ContainerFlip'
 import CardsProjects from './components/CardsProjects'
 import ContactForm from './components/contactForm';
