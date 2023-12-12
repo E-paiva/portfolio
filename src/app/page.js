@@ -7,16 +7,18 @@ import styles from '@/styles/homePage.module.css'
 import ConatinerFlip from './components/ContainerFlip'
 import CardsProjects from './components/CardsProjects'
 import ContactForm from './components/ContactForm'
+import Head from 'next/head';
 
 
 
 
 export default function Home() {
-  //useClient();
+  
 
   
 
-  return (
+  return (<>
+ 
     <main className={styles.main}>
       <section className={styles.heroContainer} id="home">
         <div>
@@ -232,6 +234,6 @@ export default function Home() {
 
 
       <footer>2023 Designed by Evellyn</footer>
-    </main>
+    </main></>
   )
 }
