@@ -5,6 +5,7 @@ import styles from '@/styles/homePage.module.css'
 import ConatinerFlip from './components/ContainerFlip'
 import CardsProjects from './components/CardsProjects'
 import ContactForm from './components/ContactForm'
+import DonwloadButton from './components/DonwloadButton';
 
 
 
@@ -142,34 +143,18 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.contactsContainer}>
-          {/* <div className={styles.contactsFormContainer}>
-            <form action="#" className={styles.contactsForm}>
-              <legend><h2>Contact me</h2></legend>
-              <label htmlFor="name">Name:</label>
-              <input className={styles.inputContainer} type="text" id="name"/>
-              <label htmlFor="email">Email:</label>
-              <input className={styles.inputContainer} type="email" id="email" />
-              <label htmlFor="text">Message:</label>
-              <input className={styles.inputContainer} type="text" id="text" />
-
-              <input
-                className={styles.contactsSubmit}
-                type="submit"
-                value="Send Email"
-              />
-            </form>
-          </div> */}
-
           <ContactForm />
           <div className={styles.socialContainer}>
             <div className={styles.social}>
-              <h2>Follow me</h2>
-
-              <a href="https://www.linkedin.com/in/evellyn-paiva-985595203/" target="_blank"><img src="./icons/mdi_linkedin.png" alt="" /></a>
-              <a href="https://github.com/E-paiva" target="_blank"><img src="./icons/mdi_github.png" alt="" /></a>
-              {/* <a href="#"><img src="./icons/simple-icons_gmail.png" alt="" /></a> */}
+              <h3>Follow me</h3>
+              <div className={styles.socialbuttons}>
+                <a href="https://www.linkedin.com/in/evellyn-paiva-985595203/" target="_blank"><img src="./icons/mdi_linkedin.png" alt="" /></a>
+                <a href="https://github.com/E-paiva" target="_blank"><img src="./icons/mdi_github.png" alt="" /></a>
+                {/* <a href="#"><img src="./icons/simple-icons_gmail.png" alt="" /></a> */}</div>
             </div>
-            <div className={styles.social}><h3>Donwload my CV</h3></div>
+            <div className={styles.social}><h3>Donwload my CV</h3>
+              <DonwloadButton />
+            </div>
           </div>
         </div>
 
