@@ -2,6 +2,9 @@ import styles from '@/styles/contact.module.css'
 import {  useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function ContactForm() {
 
  let values = {name:"",
@@ -30,7 +33,8 @@ export default function ContactForm() {
         email: contact.email, 
         message: contact.message
       });
-      alert("email successfully sent check inbox");
+      toast.success("Thank you for contacting me. I will reply to you soon.");
+      setContact(values)
 
     } catch (error) {
       console.log(error);}
@@ -72,16 +76,21 @@ export default function ContactForm() {
     <legend><h2>Contact me</h2></legend>
     <label htmlFor="name">Name:</label>
     <input className={styles.inputContainer} type="text" id="name" value={contact.name}
-          onChange={handleChange}/>
+          onChange={handleChange} required/>
     <label htmlFor="email">Email:</label>
     <input className={styles.inputContainer} type="email" id="email" value={contact.email}
-          onChange={handleChange}/>
+          onChange={handleChange} required/>
     <label htmlFor="message">Message:</label>
     <input className={styles.inputContainer} type="text" id="message" value={contact.message}
-          onChange={handleChange}/>
+          onChange={handleChange} required
+          />
     <button className={styles.contactsSubmit} >
     Send Email
         </button>
+        <ToastContainer 
+        position="bottom-right"
+        autoClose={2000}
+        />
 
     {/* <input
       className={styles.contactsSubmit}

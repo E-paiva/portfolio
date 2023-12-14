@@ -199,9 +199,18 @@
 
 }
 
+.skillsAppsContainer {
+   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 15rem;
+    overflow: hidden;
+
+}
+
 .skillsApps {
     display: flex;
-    /* background-color: var(--details-color); */
     background-color: #fff;
     border: 3px solid var(--primary-color);
     justify-content: center;
