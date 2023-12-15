@@ -199,9 +199,18 @@
 
 }
 
+.skillsAppsContainer {
+   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 15rem;
+    overflow: hidden;
+
+}
+
 .skillsApps {
     display: flex;
-    /* background-color: var(--details-color); */
     background-color: #fff;
     border: 3px solid var(--primary-color);
     justify-content: center;
@@ -305,6 +314,17 @@
 
 }
 
+.coming{
+    height: 50vh;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.coming p{
+    padding: 2rem;
+}
+
 
 /*---------- contacts----------*/
 
@@ -370,6 +390,8 @@
     border: 3px solid var(--primary-color);
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem
 }
 
 .social {
@@ -379,7 +401,17 @@
     justify-content: space-between;
     background-color: #fff;
     border: 3px solid var(--primary-color);
-    margin: 1.24rem;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 1.5rem;
+    padding: 1.25rem .5rem;
+}
+
+.socialbuttons{
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.socialbuttons :hover{
+    transform: scale(1.1);
+    transition: .6s;
 }

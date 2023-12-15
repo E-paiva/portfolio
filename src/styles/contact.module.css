@@ -1,7 +1,7 @@
 .btn {
     font-family: var(--fontfamily-H);
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
 
 }
 
@@ -17,293 +17,6 @@
 
 
 
-/*---------- nav-home ----------*/
-
-.logo {
-    height: 10rem;
-}
-
-.navBar {
-    background-color: var(--tertiary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-
-.navContainer {
-    background-color: var(--secondary-color);
-    padding: 1.5rem;
-    filter: drop-shadow(8px 8px 0px #F9A402) drop-shadow(10px 10px 0px #000);
-    border: var(--primary-color) solid 3px;
-}
-
-.navLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
-    background-color: #fff;
-    padding: 1.5rem;
-    height: 16rem;
-    border: var(--primary-color) solid 3px;
-    text-decoration: none;
-    min-width: 6rem;
-
-}
-
-/*---------- home ----------*/
-
-.heroContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 2.25rem;
-    height: 98vh;
-
-}
-
-.flexTitle {
-    display: flex;
-    flex-direction: column;
-}
-
-.heroTitle {
-    margin: 1.5rem 0;
-    line-height: 4rem;
-}
-
-/* .heroTitle h1{
-    font-family: var(--fontfamily-H);
-    font-size: 3.75rem;
-    font-weight: 400;
-  } */
-
-.btnContactLink {
-    box-shadow: 6px 6px 0px 0px #F9A402;
-    border: 3px solid var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 13rem;
-    height: 4rem;
-
-    font-family: var(--fontfamily-H);
-    font-size: 1.8rem;
-    font-weight: 400;
-
-}
-
-.contactLink {
-    text-decoration: none;
-    padding: 2rem;
-    color: var(--primary-color);
-}
-
-.yellowCircle {
-    background-color: #F9A402;
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -120px;
-    right: 180px;
-    z-index: -1;
-}
-
-.line1 {
-    width: 100%;
-    border-bottom: #000 solid 6px;
-}
-
-/*---------- about me ----------*/
-
-.about_me {
-    margin: 1.5rem;
-    height: 110vh;
-}
-
-.about_meHeader {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.about_meTitle {
-    border-right: solid 4px var(--details-color);
-    border-bottom: solid 4px var(--details-color);
-    padding: .5rem;
-}
-
-.about_meContent {
-    display: flex;
-    justify-content: space-around;
-    gap: 25px
-}
-
-.about_meTxt {
-    max-width: 18rem;
-    height: 70vh;
-    background-color: var(--secondary-color);
-    border: 3px solid var(--primary-color);
-    color: #fff;
-    line-height: 1.5rem;
-    display: flex;
-
-
-
-
-}
-
-.about_meTxt p {
-    margin: auto;
-    padding: 16px;
-}
-
-/* .about_me-img-container{
-    flex-shrink: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
-    column-gap: -100px;
-} */
-
-.profileImg {
-    max-height: 400px;
-
-
-
-}
-
-.about_meSkills {
-    max-width: 65rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-
-.skillsTxt {
-    background-color: var(--tertiary-color);
-    /* background-color: var(--secondary-color); */
-    border: 3px solid var(--primary-color);
-    padding: 1rem 1rem;
-    line-height: 1.5rem;
-    color: #fff;
-
-}
-
-.skillsApps {
-    display: flex;
-    /* background-color: var(--details-color); */
-    background-color: #fff;
-    border: 3px solid var(--primary-color);
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-    max-height: 15rem;
-    overflow: hidden;
-
-}
-
-.skillsApps img {
-    height: 48px;
-
-}
-
-
-/*---------- #projects ----------*/
-
-.redCircle {
-    background-color: var(--secondary-color);
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -1;
-    margin: -3rem 1.5rem;
-}
-
-.line2 {
-    position: absolute;
-    width: 33%;
-    left: 0;
-    border-bottom: #000 solid 6px;
-    z-index: -1;
-
-}
-
-.projectsHeader {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.projectsTitle {
-    border-right: solid 4px var(--details-color);
-    border-bottom: solid 4px var(--details-color);
-    padding: .5rem;
-}
-
-.display_card {
-    display: flex;
-    align-content: baseline;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-
-}
-
-.bgBlue {
-    background-color: var(--tertiary-color);
-    display: flex;
-    gap: 5rem;
-    border-radius: 20px;
-}
-
-.bgYellow {
-    background-color: var(--details-color);
-    display: flex;
-    gap: 5rem;
-    border-radius: 20px;
-}
-
-.cards {
-    border: var(--primary-color) 4px solid;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem;
-    align-content: center;
-    max-width: 15rem;
-    margin: 1.5rem;
-
-
-}
-
-.cards_color {
-    color: #fff;
-}
-
-.cardImg {
-    width: 120rem;
-
-}
-
-.cards h4 {
-    margin-bottom: 6px;
-
-}
 
 
 /*---------- contacts----------*/
@@ -328,10 +41,10 @@
 }
 
 .contactsFormContainer {
-    padding: 10px;
+    padding: 10px 1rem;
     background-color: var(--tertiary-color);
     box-shadow: 15px 15px 0px 0px var(--primary-color);
-    border: 4px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
 }
 
 .contactsForm {
@@ -341,12 +54,15 @@
     font-family: var(--fontfamily-p);
     font-size: 1rem;
 }
+.contactsForm label{
+    padding-bottom: 4px;
+}
 
 .inputContainer {
     background-color: #d9d9d9;
     border: 3px solid var(--primary-color);
     line-height: 3.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
 }
 
 .contactsSubmit {
@@ -359,9 +75,13 @@
     align-self: center;
     margin: .5rem;
     font-family: var(--fontfamily-p);
-    font-size: 1rem;
+    font-size:1.2rem;
+    font-weight: 400;
+    cursor: pointer;
 
 }
+
+
 
 .socialContainer {
     align-self: baseline;
@@ -383,3 +103,4 @@
     gap: 2rem;
     padding: 1rem;
 }
+

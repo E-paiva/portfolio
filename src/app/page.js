@@ -1,24 +1,28 @@
 'use client';
 import 'headers';
-import Image from 'next/image'
-
 
 import styles from '@/styles/homePage.module.css'
 import ConatinerFlip from './components/ContainerFlip'
 import CardsProjects from './components/CardsProjects'
 import ContactForm from './components/ContactForm'
-import Head from 'next/head';
+import DonwloadButton from './components/DonwloadButton';
+
 
 
 
 
 export default function Home() {
-  
 
-  
+
+
 
   return (<>
- 
+    <header>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" type="image/x-icon" href="./icons/favicon.ico" />
+    </header>
+
     <main className={styles.main}>
       <section className={styles.heroContainer} id="home">
         <div>
@@ -66,9 +70,9 @@ export default function Home() {
         <div className={styles.about_meContent}>
           <div className={styles.about_meTxt}>
             <p>
-            My name is Evellyn. I'm a person who tries to see the good side of situations. When things don't go to plan, I think about how to get around them, concentrating on solving the problem. <br/>
+              My name is Evellyn. I'm a person who tries to see the good side of situations. When things don't go to plan, I think about how to get around them, concentrating on solving the problem. <br />
             </p>
-            
+
           </div>
 
           <div className={styles.about_meImgContainer}>
@@ -78,25 +82,26 @@ export default function Home() {
           <div className={styles.about_meSkills}>
             <div className={styles.skillsTxt}>
               <p>
-              My professional career started in architecture. Now, I'm starting a career in software development, give a unique perspective to technology, combining creativity, technical skills and organization based on all
-            different experiences in multidisciplinary teams and projects in other areas.
+                My professional career started in architecture. Now, I'm starting a career in software development, give a unique perspective to technology, combining creativity, technical skills and organization based on all
+                different experiences in multidisciplinary teams and projects in other areas.
               </p>
             </div>
-            <div className={styles.skillsApps}>
-              <div className={styles.appsNode}><img src="./icons/logo-node.svg" alt="" /></div>
-              <div className={styles.appsMongo}><img src="./icons/logo-mongo.svg" alt="" /></div>
-              <div className={styles.appsReact}><img src="./icons/logo-react.png" alt="" /></div>
-              <div className={styles.appsNext}><img src="./icons/logo-next.svg" alt="" width={120}/></div>
-              <div className={styles.appsJs0}> <img src="./icons/icons_javascrip.png" alt="" /></div>
-              <div className={styles.appsHtml0}><img src="./icons/logo-html.png" alt="" /></div>
-                
-              
-              <div className={styles.appsCss0}> <img src="./icons/icon-css.png" alt="" /></div>
-              
-              <div className={styles.appsFigma}><img src="./icons/icon-figma.png" alt="" /></div>
-              <div className={styles.appsGitHub}><img src="./icons/mdi_github.png" alt="" /></div>
-                
-              
+            <div className={styles.skillsAppsContainer}>
+              <h3>My Toolbox & Things I Can Do</h3>
+              <p>The skills, tools and technologies I use to at now:</p>
+
+              <div className={styles.skillsApps}>
+                <div className={styles.appsReact}><img src="./icons/logo-react.png" alt="" /></div>
+                <div className={styles.appsJs0}> <img src="./icons/icons_javascrip.png" alt="" /></div>
+                <div className={styles.appsNext}><img src="./icons/logo-next.svg" alt="" width={120} /></div>
+                <div className={styles.appsNode}><img src="./icons/logo-node.svg" alt="" /></div>
+                <div className={styles.appsGitHub}><img src="./icons/mdi_github.png" alt="" /></div>
+                <div className={styles.appsHtml0}><img src="./icons/logo-html.png" alt="" /></div>
+                <div className={styles.appsCss0}> <img src="./icons/icon-css.png" alt="" /></div>
+                <div className={styles.appsFigma}><img src="./icons/icon-figma.png" alt="" /></div>
+                <div className={styles.appsMongo}><img src="./icons/logo-mongo.svg" alt="" /></div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -114,78 +119,21 @@ export default function Home() {
             <h2>Projects</h2>
           </div>
         </div>
+        <div className={styles.coming}>
+          <h2 >coming...</h2>
+          <p>we are currently work on this features and will lauch soon</p>
+        </div>
 
         {/* <div className={styles.display_card}>
-          <div className={styles.bgBlue}>
-            <article className={styles.cards }>
-              <img src="./icons/mockup.png" alt="" />
-              <h4>Project name</h4>
-              <p>
-                descrição do projeto Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolor, voluptates?
-              </p>
-            </article>
-
-            <article className={styles.cards }>
-              <img src="./icons/mockup.png" alt="" />
-              <h4>Project name</h4>
-              <p>
-                descrição do projeto Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolor, voluptates?
-              </p>
-            </article>
-          </div>
-
-          <article className={styles.cards}>
-            <img src="./icons/mockup.png" alt="" />
-            <h4>Project name</h4>
-            <p>
-              descrição do projeto Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dolor, voluptates?
-            </p>
-          </article>
-
-          <article className={styles.cards}>
-            <img src="./icons/mockup.png" alt="" />
-            <h4>Project name</h4>
-            <p>
-              descrição do projeto Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dolor, voluptates?
-            </p>
-          </article>
-
-          <div className={styles.bgYellow}>
-            <article className={styles.cards }>
-              <img src="./icons/mockup.png" alt="" />
-              <h4>Project name</h4>
-              <p>
-                descrição do projeto Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolor, voluptates?
-              </p>
-            </article>
-
-            <article className={styles.cards }>
-              <img src="./icons/mockup.png" alt="" />
-              <div className={styles.carsTxt}>
-                <h4>Project name</h4>
-                <p>
-                  descrição do projeto Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor, voluptates?
-                </p>
-              </div>
-            </article>
-          </div>
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
         </div> */}
-        <div className={styles.display_card}>
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          </div>
-        
-        
+
+
       </section>
 
       <section className={styles.contacts} id="contacts">
@@ -198,37 +146,22 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.contactsContainer}>
-          {/* <div className={styles.contactsFormContainer}>
-            <form action="#" className={styles.contactsForm}>
-              <legend><h2>Contact me</h2></legend>
-              <label htmlFor="name">Name:</label>
-              <input className={styles.inputContainer} type="text" id="name"/>
-              <label htmlFor="email">Email:</label>
-              <input className={styles.inputContainer} type="email" id="email" />
-              <label htmlFor="text">Message:</label>
-              <input className={styles.inputContainer} type="text" id="text" />
-
-              <input
-                className={styles.contactsSubmit}
-                type="submit"
-                value="Send Email"
-              />
-            </form>
-          </div> */}
-
-            <ContactForm/>
+          <ContactForm />
           <div className={styles.socialContainer}>
             <div className={styles.social}>
-              <h2>Follow me</h2>
-          
-              <a href="https://www.linkedin.com/in/evellyn-paiva-985595203/"  target="_blank"><img src="./icons/mdi_linkedin.png" alt="" /></a>
-              <a href="https://github.com/E-paiva" target="_blank"><img src="./icons/mdi_github.png" alt="" /></a>
-              {/* <a href="#"><img src="./icons/simple-icons_gmail.png" alt="" /></a> */}
+              <h3>Follow me</h3>
+              <div className={styles.socialbuttons}>
+                <a href="https://www.linkedin.com/in/evellyn-paiva-985595203/" target="_blank"><img src="./icons/mdi_linkedin.png" alt="" /></a>
+                <a href="https://github.com/E-paiva" target="_blank"><img src="./icons/mdi_github.png" alt="" /></a>
+                {/* <a href="#"><img src="./icons/simple-icons_gmail.png" alt="" /></a> */}</div>
+            </div>
+            <div className={styles.social}><h3>Donwload my CV</h3>
+              <DonwloadButton />
             </div>
           </div>
         </div>
 
-        
+
       </section>
 
 

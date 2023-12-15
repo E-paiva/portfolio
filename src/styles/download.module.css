@@ -1,0 +1,30 @@
+.button{
+    border: none;
+    /* background-color: red; */
+    cursor: pointer;
+    height: 70px;
+    margin: auto;
+    padding-block: 0px;
+    padding-inline: 0px;
+    border-radius: 13px;
+
+}
+
+
+.button :hover {
+    border-radius: 13px;
+  
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+
+/* .container{
+    top: 50%;
+  left: 50%;
+ 
+  background-color: red;
+
+   
+
+} */

@@ -1,63 +1,9 @@
-/* .display_card{
-    display: flex;
-    align-content: baseline;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:5rem;
 
-}
-.cards button{
-    background: transparent;
-    border-radius: 0px
-}
-
-.bgBlue{
-    background-color: var(--tertiary-color);
-    display: flex;
-    gap:5rem;
-    border-radius: 20px;
-}
-
-.bgYellow{
-    background-color: var(--details-color);
-    display: flex;
-    gap:5rem;
-    border-radius: 20px;
-}
-
-.cards{
-    border: var(--primary-color) 4px solid;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem;
-    align-content: center;
-    max-width: 15rem;
-    margin: 1.5rem;
-    
-   
-}
-
-
-
-.cards_color{
-    color: #fff;
-}
-.cardImg{
-    width: 120rem;
-
-}
-
-.cards h4{
-    margin-bottom: 6px;
-    
-} */
 
 .flipCard {
     /*   background-color: transparent; */
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 400px;
     perspective: 1000px;
  
 
@@ -72,6 +18,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    
     
     
 }
@@ -108,10 +55,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     align-content: center;
-    max-width: 16rem;
-   margin: 1rem;
+    /* max-width: 16rem; 
+   margin: 1rem;*/
 }
 
 .flipCardFront {
@@ -120,7 +67,7 @@
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
    
 }
@@ -148,4 +95,13 @@
     display: flex;
     justify-content: space-around;
     
+}
+
+.cardBackDescription{
+    padding: 1rem;
+    
+}
+.cardFrontTitle{
+    padding: 1rem;
+
 }
