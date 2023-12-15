@@ -119,16 +119,19 @@ export default function Home() {
             <h2>Projects</h2>
           </div>
         </div>
-
-
-        <div className={styles.display_card}>
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
+        <div className={styles.coming}>
+          <h2 >coming...</h2>
+          <p>we are currently work on this features and will lauch soon</p>
         </div>
+
+        {/* <div className={styles.display_card}>
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+          <CardsProjects />
+        </div> */}
 
 
       </section>

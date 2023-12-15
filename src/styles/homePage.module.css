@@ -314,6 +314,17 @@
 
 }
 
+.coming{
+    height: 50vh;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.coming p{
+    padding: 2rem;
+}
+
 
 /*---------- contacts----------*/
 

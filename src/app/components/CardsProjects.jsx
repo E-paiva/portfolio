@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from '@/styles/card.module.css'
 
-export default function CardsProjects() {
+export default function CardsProjects({name, link, image, description}) {
   const [isActive, setIsActive] = useState(true);
 
 
@@ -12,14 +12,15 @@ export default function CardsProjects() {
 
 
   return <div className={styles.flipCard} onMouseEnter={() => setIsActive(false)}
-  onMouseLeave={() => setIsActive(true)}>
+    onMouseLeave={() => setIsActive(true)}>
     <div className={isActive ? styles.flipCardInner : styles.flipCardactive}>
 
       <div className={styles.flipCardFront}>
-        <h4>Project Name</h4>
-        <img src="./icons/mockupInkersTranparesnt.png" alt="" width={300} /></div>
+        <h4 className={styles.cardFrontTitle}>Project Name</h4>
+        <img src="./icons/mockupInkersTranparesnt.png" alt="" width={300} />
+      </div>
       <div className={styles.flipCardBack}>
-        <p>
+        <p className={styles.cardBackDescription}>
           descrição do projeto Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Dolor, voluptates?
         </p>
@@ -29,7 +30,7 @@ export default function CardsProjects() {
         </div>
 
       </div>
-      </div>
+    </div>
   </div>
 
 }
