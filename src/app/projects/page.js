@@ -11,5 +11,5 @@ export default function ContainerFlip() {
 
 
 
-    return <div class="container-flip">{frases[0]}</div>
+    return <>{frases[0]}</>
 }
