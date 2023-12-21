@@ -35,7 +35,7 @@ export function Timer() {
 
 
     return (
-        <main>
+        <div className={styles.page}>
             <div>
                 <h1 className={styles.h1}>egg timer</h1>
             </div>
@@ -70,6 +70,6 @@ export function Timer() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }

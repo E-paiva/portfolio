@@ -3,7 +3,7 @@
 .flipCard {
     /*   background-color: transparent; */
     width: 320px;
-    height: 400px;
+    height: 300px;
     perspective: 1000px;
  
 
@@ -67,7 +67,7 @@
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-a;
     align-items: center;
    
 }
@@ -89,6 +89,13 @@
     border-radius: 0px;
     padding: .5rem;
     border: var(--primary-color) 1px solid;
+    text-decoration: none;
+    
+ 
+}
+.cardButtons a:visited{
+    color: #000;
+
  
 }
 .containerButtons{

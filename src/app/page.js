@@ -124,14 +124,18 @@ export default function Home() {
           <p>we are currently work on this features and will lauch soon</p>
         </div>
 
-        {/* <div className={styles.display_card}>
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-        </div> */}
+        <div className={styles.display_card}>
+          <CardsProjects 
+          name="Timer" 
+          image="./icons/projects-icons/print-timer.png"
+          link="/projects/eggTimer"
+          linkGit="https://github.com/E-paiva/eggTimer"
+          description='Timer - project made during the Bytes4future "Advanced Program Bootcamp" challenge.'
+
+          
+          />
+          
+        </div> 
 
 
       </section>

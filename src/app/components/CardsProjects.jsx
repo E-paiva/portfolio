@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import styles from '@/styles/card.module.css'
 
-export default function CardsProjects({name, link, image, description}) {
+
+export default function CardsProjects({name, link,linkGit, image, description}) {
   const [isActive, setIsActive] = useState(true);
+ 
 
-
-  const handleClick = () => {
-    //setIsActive((IsActive) => !IsActive);
-    console.log("hello")
-  };
+ 
 
 
   return <div className={styles.flipCard} onMouseEnter={() => setIsActive(false)}
@@ -16,17 +14,21 @@ export default function CardsProjects({name, link, image, description}) {
     <div className={isActive ? styles.flipCardInner : styles.flipCardactive}>
 
       <div className={styles.flipCardFront}>
-        <h4 className={styles.cardFrontTitle}>Project Name</h4>
-        <img src="./icons/mockupInkersTranparesnt.png" alt="" width={300} />
+        <h3 className={styles.cardFrontTitle}>{name}</h3>
+        
+         <img src={"../projects-icons/print-timer.png"} alt="" width={300} /> 
       </div>
       <div className={styles.flipCardBack}>
         <p className={styles.cardBackDescription}>
-          descrição do projeto Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Dolor, voluptates?
+          {description}
         </p>
         <div className={styles.containerButtons}>
-          <button className={styles.cardButtons} onClick={handleClick} >View Code</button>
-          <button className={styles.cardButtons} onClick={handleClick}>View Live</button>
+          
+          <a className={styles.cardButtons} href={linkGit}  target='_blank'><p>View Code</p></a>
+          <a className={styles.cardButtons} href={link}  target='_blank'><p>View Live</p></a>
+          
+
+          
         </div>
 
       </div>
