@@ -16,7 +16,7 @@ export default function CardsProjects({name, link,linkGit, image, description}) 
       <div className={styles.flipCardFront}>
         <h3 className={styles.cardFrontTitle}>{name}</h3>
         
-         <img src={"../projects-icons/print-timer.png"} alt="" width={300} /> 
+         <img src={image} alt="" width={300} /> 
       </div>
       <div className={styles.flipCardBack}>
         <p className={styles.cardBackDescription}>

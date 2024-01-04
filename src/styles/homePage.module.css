@@ -163,15 +163,7 @@
     padding: 16px;
 }
 
-/* .about_me-img-container{
-    flex-shrink: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
-    column-gap: -100px;
-} */
+
 
 .profileImg {
     max-height: 400px;
@@ -181,7 +173,7 @@
 }
 
 .about_meSkills {
-    max-width: 65rem;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,7 +185,7 @@
     background-color: var(--tertiary-color);
     /* background-color: var(--secondary-color); */
     border: 3px solid var(--primary-color);
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
     line-height: 1.5rem;
     color: #fff;
 
@@ -206,6 +198,7 @@
     flex-wrap: wrap;
     max-height: 15rem;
     overflow: hidden;
+    
 
 }
 
@@ -216,7 +209,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     flex-wrap: wrap;
     max-height: 15rem;
     overflow: hidden;
