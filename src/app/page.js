@@ -119,19 +119,29 @@ export default function Home() {
             <h2>Projects</h2>
           </div>
         </div>
-        <div className={styles.coming}>
-          <h2 >coming...</h2>
-          <p>we are currently work on this features and will lauch soon</p>
-        </div>
+        
 
-        {/* <div className={styles.display_card}>
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
-        </div> */}
+        <div className={styles.display_card}>
+          <CardsProjects 
+          name="Timer" 
+          image="../projects-icons/print-timer.png"
+          link="/projects/eggTimer"
+          linkGit="https://github.com/E-paiva/eggTimer"
+          description='Timer - kitchen timer app. Project made during the Bytes4future "Advanced Program Bootcamp" challenge.'
+
+          
+          />
+          <CardsProjects 
+          name="Colorista" 
+          image="../projects-icons/print-colorista.png"
+          link="/projects/colorpalette"
+          linkGit="https://github.com/E-paiva/colorista"
+          description='Colorista - app for making color palettes. React project made during the Bytes4future "Advanced Program Bootcamp" challenge.'
+
+          
+          />
+          
+        </div> 
 
 
       </section>
