@@ -124,7 +124,7 @@ export default function Home() {
         <div className={styles.display_card}>
           <CardsProjects 
           name="Timer" 
-          image="../projects-icons/print-timer.png"
+          image="./projects-icons/print-timer.png"
           link="/projects/eggTimer"
           linkGit="https://github.com/E-paiva/eggTimer"
           description='Timer - kitchen timer app. Project made during the Bytes4future "Advanced Program Bootcamp" challenge.'
@@ -133,7 +133,7 @@ export default function Home() {
           />
           <CardsProjects 
           name="Colorista" 
-          image="../projects-icons/print-colorista.png"
+          image="./projects-icons/print-colorista.png"
           link="/projects/colorpalette"
           linkGit="https://github.com/E-paiva/colorista"
           description='Colorista - app for making color palettes. React project made during the Bytes4future "Advanced Program Bootcamp" challenge.'
