@@ -43,14 +43,14 @@ export default function Home() {
         </div>
 
         <div className={styles.navBar}>
-          <div className={styles.navContainer}>
+          <nav className={styles.navContainer}>
             <div className={styles.navLinks}>
               <a href="#home" className={styles.link}>Home</a>
               <a href="#about_me" className={styles.link}>About me</a>
               <a href="#projects" className={styles.link}>Projects</a>
               <a href="#contacts" className={styles.link}>Contacts</a>
             </div>
-          </div>
+          </nav>
         </div>
       </section>
 
