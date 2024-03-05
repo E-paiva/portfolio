@@ -32,10 +32,10 @@ return <div className={styles.container}>
   <div  className={styles.text}>
      <ul className={styles.list}>
  
-    <li className={styles.item}><h1>and Plant lover 🌱</h1></li>
-    <li className={styles.item}><h1>and Dedicated Episode Explorer 🎬</h1></li>
-    <li className={styles.item}><h1>and lover of Home Cooking 🍲</h1></li>
-    <li className={styles.item}><h1>and Travel Itinerary Maker 📍</h1></li>
+    <li className={styles.item}><h1>and plant lover 🌱</h1></li>
+    <li className={styles.item}><h1>and enthusiastic hiker 🏕️</h1></li>
+    <li className={styles.item}><h1>and lover of home cooking 🍲</h1></li>
+    <li className={styles.item}><h1>and travel itinerary maker 📍</h1></li>
    
   </ul></div>
 </div>

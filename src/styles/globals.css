@@ -73,3 +73,23 @@ footer {
   font-family: var(--fontfamily-p);
 
 }
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-family: var(--fontfamily-H);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: var(--fontfamily-H);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: var(--fontfamily-H);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
