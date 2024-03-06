@@ -14,7 +14,16 @@
 
 }
 
-
+.about_me {
+    padding-top: 3.5rem;
+}
+ .contacts {
+    padding-top: 3.5rem;
+}
+.projects{
+    padding-top: 3.5rem;
+    z-index: 1;
+}
 
 
 /*---------- nav-home ----------*/
@@ -23,7 +32,9 @@
     height: 10rem;
 }
 
-.navBar {
+
+
+/* .navBar {
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: center;
@@ -38,7 +49,7 @@
     filter: drop-shadow(8px 8px 0px #F9A402) drop-shadow(10px 10px 0px #000);
     border: var(--primary-color) solid 3px;
 }
-
+*/
 .navLinks {
     display: flex;
     flex-direction: column;
@@ -51,19 +62,172 @@
     height: 16rem;
     border: var(--primary-color) solid 3px;
     text-decoration: none;
-    min-width: 6rem;
+  
+    list-style-type: none;
+
+} 
+
+.mobileMenu {
+    display: contents;
+    
+}
+.hamburgerMenu {
+    /* background-color: var(--bg-color); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    position: fixed;
+    transition: left 0.3s ease;
+    
+    top: 0;
+
+    z-index: 1000
+}
+
+.hamburgerMenuOpen{
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 0;
+    padding:  1rem  ;
+    position: fixed;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    height: 100vh;
+    top: 0;
+}
+
+.classOpen {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+     filter: drop-shadow(8px 8px 0px #F9A402); /*drop-shadow(10px 10px 0px #000); */
+    border: var(--primary-color) solid 3px;
+    margin: 1rem;
+    width: 160px;
+    
+    transition: margin-left 0.3s ease;
+    
+}
+.hamburgerButton {
+    background-color: transparent;
+    border: none;
+    margin: 1rem;
+ 
+}
+
+.menuCenter{
+    display: flex;
+    
+}
+
+.menuContainer{
+    margin: auto;
+    
+}
+
+/*.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  Cor escura com opacidade (ajuste conforme necessário) 
+    z-index: 1; /* Certifique-se de que o overlay esteja acima do conteúdo da página 
+    
+}*/
+
+/*---------- nav /home mobile ----------*/
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+   
+
+    .navBar {
+        background-color: var(--secondary-color);
+        display: none
+    }
+
+
+    .heroTitle {
+        margin: 1.5rem 0;
+        line-height: 3.5rem;
+        padding: 4rem 0;
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: row-reverse;
+      
+    }
+
+
+
+    .classOpen {
+        background-color: var(--secondary-color);
+        padding: 1.5rem;
+         filter: drop-shadow(8px 8px 0px #F9A402); /*drop-shadow(10px 10px 0px #000); */
+        border: var(--primary-color) solid 3px;
+       
+        transition: margin-left 0.3s ease;
+        
+        /* width: 100%;
+        position: fixed;
+         transform: translateX(0); */
+    }
+    .menuContainer{
+        margin: auto;
+        
+    }
+    /*.classClose {
+         transform: translateX(+100%); 
+
+    }*/
+
+    .hamburgerMenu {
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        position: fixed;
+        transition: left 0.3s ease;
+    }
+
+    .hamburgerMenuOpen{
+        background-color: var(--tertiary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        padding: 0rem 0rem 3rem 0;
+        position: fixed;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        height: auto;
+    }
+
+
+    
 
 }
+
 
 /*---------- home ----------*/
 
 .heroContainer {
-    display: flex;
-    justify-content: space-between;
+  
     margin-left: 2.25rem;
-    height: 98vh;
+   padding-bottom: 5rem;
 
 }
+
+
+
 
 .flexTitle {
     display: flex;
@@ -72,7 +236,7 @@
 
 .heroTitle {
     margin: 1.5rem 0;
-    line-height: 4rem;
+    line-height: 4.5rem;
 }
 
 /* .heroTitle h1{
@@ -121,15 +285,16 @@
 /*---------- about me ----------*/
 
 .about_me {
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
     height: 110vh;
+    
 }
 
 .about_meHeader {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    margin: 1rem;
+    margin:  1rem ;
 }
 
 .about_meTitle {
@@ -141,7 +306,8 @@
 .about_meContent {
     display: flex;
     justify-content: space-around;
-    gap: 25px
+    gap: 25px;
+    padding: 1rem;
 }
 
 .about_meTxt {
@@ -152,10 +318,7 @@
     color: #fff;
     line-height: 1.5rem;
     display: flex;
-
-
-
-
+    text-align: justify;
 }
 
 .about_meTxt p {
@@ -163,13 +326,9 @@
     padding: 16px;
 }
 
-
-
 .profileImg {
-    max-height: 400px;
-
-
-
+    max-width: 20vw ;
+    margin: auto;
 }
 
 .about_meSkills {
@@ -177,29 +336,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
-
 
 .skillsTxt {
     background-color: var(--tertiary-color);
-    /* background-color: var(--secondary-color); */
     border: 3px solid var(--primary-color);
     padding: 2rem 2rem;
     line-height: 1.5rem;
     color: #fff;
-
+    text-align: justify;
 }
 
 .skillsAppsContainer {
-   
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     max-height: 15rem;
-    overflow: hidden;
-    
-
+    /* overflow: hidden; */
 }
 
 .skillsApps {
@@ -212,7 +365,7 @@
     padding: 1rem 2rem;
     flex-wrap: wrap;
     max-height: 15rem;
-    overflow: hidden;
+
 
 }
 
@@ -220,6 +373,54 @@
     height: 48px;
 
 }
+
+
+/*---------- #mobile aboutme ----------*/
+@media screen and (max-width: 768px) {
+    .about_me {
+
+        height: auto;
+        min-height: auto;
+    }
+
+    .about_meContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:  0 2rem ;
+    }
+
+    .about_meTxt {
+        max-width: none;
+        background-color: var(--secondary-color);
+        border: 3px solid var(--primary-color);
+        color: #fff;
+        line-height: 1.5rem;
+        padding: 1rem 1rem;
+        height: auto;
+        text-align: justify;
+
+    }
+
+    .skillsAppsContainer {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-height: none;
+        margin-top: 1rem;
+        /* overflow: hidden; */
+    }
+
+    .skillsApps {
+        max-height: none;
+    }
+
+    .profileImg {
+        max-height: 60vh;
+        max-width: fit-content 
+    }
+}
+
 
 
 /*---------- #projects ----------*/
@@ -262,6 +463,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
+    z-index: 1;
 
 }
 
@@ -307,21 +509,37 @@
 
 }
 
-.coming{
+/* .coming {
     height: 50vh;
     margin: auto;
     text-align: center;
-    
+
 }
 
-.coming p{
+.coming p {
     padding: 2rem;
+} */
+
+
+
+
+/*---------- mobile projects----------*/
+@media screen and (max-width: 768px) {
+    .redCircle {
+        display: none;
+    }
+
+    .line2 {
+        display: none;
+    }
+
 }
 
 
 /*---------- contacts----------*/
 
 .contactsHeader {
+
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -337,17 +555,19 @@
 .contactsContainer {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+   
+    flex-wrap: wrap;
+
 }
 
-.contactsFormContainer {
+/*.contactsFormContainer {
     padding: 10px;
     background-color: var(--tertiary-color);
     box-shadow: 15px 15px 0px 0px var(--primary-color);
     border: 4px solid var(--primary-color);
 }
 
-.contactsForm {
+ .contactsForm {
     display: flex;
     flex-direction: column;
     width: 30rem;
@@ -374,12 +594,12 @@
     font-family: var(--fontfamily-p);
     font-size: 1rem;
 
-}
+} */
 
 .socialContainer {
     align-self: baseline;
     background-color: #C43024;
-    box-shadow: 12px 12px 0px 0px #F9A402;
+    box-shadow: 12px 12px 0px 0px var(--details-color);
     border: 3px solid var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -398,13 +618,27 @@
     padding: 1.25rem .5rem;
 }
 
-.socialbuttons{
+.socialbuttons {
     display: flex;
     gap: 1rem;
     padding: 0 1rem;
 }
 
-.socialbuttons :hover{
+.socialbuttons :hover {
     transform: scale(1.1);
     transition: .6s;
+}
+
+/*---------- mobile contacts----------*/
+@media screen and (max-width: 768px) {
+
+    .contactsContainer {
+        
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .socialContainer {
+        width: 65vw;
+    }
 }

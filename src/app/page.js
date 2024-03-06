@@ -6,6 +6,7 @@ import ConatinerFlip from './components/ContainerFlip'
 import CardsProjects from './components/CardsProjects'
 import ContactForm from './components/ContactForm'
 import DonwloadButton from './components/DonwloadButton';
+import Menu from './components/Menu';
 
 
 
@@ -24,9 +25,14 @@ export default function Home() {
     </header>
 
     <main className={styles.main}>
+      <div className={styles.mobileMenu}>
+          <Menu/> 
+          </div>
       <section className={styles.heroContainer} id="home">
-        <div>
-          <div><img src="./icons/logo_inicio.svg" className={styles.logo} alt="" /></div>
+        <div className={styles.bannerContainer}>
+          <div ><img src="./icons/logo_inicio.svg"  alt="" className={styles.logo}/> </div>
+          
+         
 
           <div className={styles.heroTitle}>
             <div className={styles.flexTitle}>
@@ -40,18 +46,20 @@ export default function Home() {
           <div className={styles.btnContactLink}>
             <a href="#contacts" className={styles.contactLink}> Contact me </a>
           </div>
+          
         </div>
 
-        <div className={styles.navBar}>
-          <div className={styles.navContainer}>
+          
+        {/* <div className={styles.navBar}>
+          <nav className={styles.navContainer}>
             <div className={styles.navLinks}>
               <a href="#home" className={styles.link}>Home</a>
               <a href="#about_me" className={styles.link}>About me</a>
               <a href="#projects" className={styles.link}>Projects</a>
               <a href="#contacts" className={styles.link}>Contacts</a>
             </div>
-          </div>
-        </div>
+          </nav>
+        </div> */}
       </section>
 
       <div className={styles.yellowCircle}></div>
@@ -59,9 +67,9 @@ export default function Home() {
 
       <section className={styles.about_me} id="about_me">
         <div className={styles.about_meHeader}>
-          <div className={styles.btnNav}>
+          {/* <div className={styles.btnNav}>
             <a href="#home"><img src="./icons/logo_menu.svg" alt="" /></a>
-          </div>
+          </div> */}
           <div className={styles.about_meTitle}>
             <h2>About me</h2>
           </div>
@@ -112,9 +120,9 @@ export default function Home() {
 
       <section className={styles.projects} id="projects">
         <div className={styles.projectsHeader}>
-          <div className={styles.btnNav}>
+          {/* <div className={styles.btnNav}>
             <a href="#home"><img src="./icons/logo_menu.svg" alt="" /></a>
-          </div>
+          </div> */}
           <div className={styles.projectsTitle}>
             <h2>Projects</h2>
           </div>
@@ -148,9 +156,9 @@ export default function Home() {
 
       <section className={styles.contacts} id="contacts">
         <div className={styles.contactsHeader}>
-          <div className={styles.btnNav}>
+          {/* <div className={styles.btnNav}>
             <a href="#home"><img src="./icons/logo_menu.svg" alt="" /></a>
-          </div>
+          </div> */}
           <div className={styles.contactsTitle}>
             <h2>Contacts</h2>
           </div>
@@ -159,17 +167,18 @@ export default function Home() {
           <ContactForm />
           <div className={styles.socialContainer}>
             <div className={styles.social}>
-              <h3>Follow me</h3>
+              <h4>Follow me</h4>
               <div className={styles.socialbuttons}>
                 <a href="https://www.linkedin.com/in/evellyn-paiva-985595203/" target="_blank"><img src="./icons/mdi_linkedin.png" alt="" /></a>
                 <a href="https://github.com/E-paiva" target="_blank"><img src="./icons/mdi_github.png" alt="" /></a>
                 {/* <a href="#"><img src="./icons/simple-icons_gmail.png" alt="" /></a> */}</div>
             </div>
-            <div className={styles.social}><h3>Donwload my CV</h3>
+            <div className={styles.social}><h4>Donwload my CV</h4>
               <DonwloadButton />
             </div>
           </div>
         </div>
+
 
 
       </section>
