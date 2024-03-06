@@ -14,12 +14,13 @@ const Menu = () => {
     setMenuOpen(false);
   };
 
-  return (
+  return (<div className={`${styles[menuOpen ? 'overlay' : '']}`}>
     <nav className={`${styles[menuOpen ? 'hamburgerMenuOpen' : 'hamburgerMenu']}`}>
       <button className={styles.hamburgerButton} onClick={toggleMenu}>
       {menuOpen ?<img src="./icons/close_icon.svg" alt="" height={50}/>:<img src="./icons/logo_menu.svg" alt="" />}
       </button>
       <div className={styles.menuContainer}>
+       
       {menuOpen && (
         <div className={`${styles[menuOpen ? 'classOpen' : 'classClose']}`}>
           <ul className={styles.navLinks}>
@@ -32,7 +33,7 @@ const Menu = () => {
         </div>
       )}</div>
     </nav>
-  );
+  </div>);
 };
 
 export default Menu;
