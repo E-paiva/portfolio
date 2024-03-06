@@ -41,7 +41,7 @@
 }
 
 .contactsFormContainer {
-    padding: 10px 1rem;
+    padding:  1.5rem;
     background-color: var(--tertiary-color);
     box-shadow: 12px 12px 0px 0px var(--primary-color);
     border: 3px solid var(--primary-color);
@@ -91,30 +91,15 @@
     }
 
     .contactsForm {
-        display: flex;
-        flex-direction: column;
         width: 65vw;
-        font-family: var(--fontfamily-p);
-        font-size: 1rem;
     }
-
 
     .inputContainer {
         background-color: #d9d9d9;
         border: 3px solid var(--primary-color);
         line-height: 3.5rem;
         margin-bottom: .75rem;
-       
     }
-
-    .contactsFormContainer {
-       
-        background-color: var(--tertiary-color);
-        box-shadow: 12px 12px 0px 0px var(--primary-color);
-        border: 3px solid var(--primary-color);
-       
-    }
-
    
  }
  

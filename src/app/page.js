@@ -26,7 +26,7 @@ export default function Home() {
 
     <main className={styles.main}>
       <div className={styles.mobileMenu}>
-          <Menu/>
+          <Menu/> 
           </div>
       <section className={styles.heroContainer} id="home">
         <div className={styles.bannerContainer}>

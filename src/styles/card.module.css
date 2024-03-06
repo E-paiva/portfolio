@@ -5,7 +5,7 @@
     width: 320px;
     height: 300px;
     perspective: 1000px;
-    z-index: -1
+    
 
     
 }
@@ -39,8 +39,9 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-   
     transform: rotateY(180deg);
+
+    z-index: 2
 }
 
 .flipCardFront,
@@ -59,6 +60,7 @@
     align-content: center;
     /* max-width: 16rem; 
    margin: 1rem;*/
+   z-index: 2
 }
 
 .flipCardFront {
