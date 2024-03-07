@@ -14,7 +14,8 @@ import Menu from './components/Menu';
 
 export default function Home() {
 
-
+  const date = new Date();
+  const currentYear = date.getFullYear();
 
 
   return (<>
@@ -185,7 +186,7 @@ export default function Home() {
 
 
 
-      <footer>2023 Designed by Evellyn</footer>
+      <footer className={styles.footer}> {currentYear} Designed by Evellyn</footer>
     </main></>
   )
 }

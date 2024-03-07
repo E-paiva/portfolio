@@ -6,10 +6,10 @@ import React, {  useEffect, useState } from 'react';
 export default function DonwloadButton() {
    
   const onButtonClick = () => {
-    const pdfUrl = "CV.pdf";
+    const pdfUrl = "CV-EvellynPaiva.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "CV - Evellyn Paiva - Junior Full Stack.pdf"; // specify the filename
+    link.download = "CV-EvellynPaiva.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
