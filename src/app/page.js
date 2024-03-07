@@ -7,6 +7,7 @@ import CardsProjects from './components/CardsProjects'
 import ContactForm from './components/ContactForm'
 import DonwloadButton from './components/DonwloadButton';
 import Menu from './components/Menu';
+import Head from 'next/head';
 
 
 
@@ -14,15 +15,28 @@ import Menu from './components/Menu';
 
 export default function Home() {
 
-
+  const date = new Date();
+  const currentYear = date.getFullYear();
 
 
   return (<>
-    <header>
+    <Head>
+
+
+    
+{/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0H49M48DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N0H49M48DF');
+</script> */}
+
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" type="image/x-icon" href="./icons/favicon.ico" />
-    </header>
+    </Head>
 
     <main className={styles.main}>
       <div className={styles.mobileMenu}>
@@ -185,7 +199,7 @@ export default function Home() {
 
 
 
-      <footer>2023 Designed by Evellyn</footer>
+      <footer className={styles.footer}> {currentYear} Designed by Evellyn</footer>
     </main></>
   )
 }

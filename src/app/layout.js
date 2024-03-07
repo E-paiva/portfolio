@@ -1,4 +1,4 @@
-
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import '@/styles/globals.css'
 import Head from 'next/head'
 
@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
     <html >
       
       <body >{children}</body>
+      <GoogleTagManager gtmId="G-N0H49M48DF" />
+      <GoogleAnalytics gtmId="G-N0H49M48DF"/>
     </html>
   )
 }
