@@ -72,17 +72,19 @@
     
 }
 .hamburgerMenu {
-    /* background-color: var(--bg-color); */
+   background-color: var(--bg-color); 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 100%;
+    /* width: 100%; */
     position: fixed;
-    transition: left 0.3s ease;
     
+    right: 0;
     top: 0;
 
-    z-index: 1000
+    z-index: 1000;
+
+    transition: all 1s ease;
 }
 
 .hamburgerMenuOpen{
@@ -94,9 +96,11 @@
     padding:  1rem  ;
     position: fixed;
     z-index: 1000;
-    transition: left 0.3s ease;
+   
     height: 100vh;
     top: 0;
+
+    transition: all 1s ease;
 }
 
 .classOpen {
@@ -106,8 +110,10 @@
     border: var(--primary-color) solid 3px;
     margin: 1rem;
     width: 160px;
+
+    transition: all 1s ease-in;
     
-    transition: margin-left 0.3s ease;
+    
     
 }
 .hamburgerButton {
@@ -127,16 +133,17 @@
     
 }
 
-/*.overlay{
+.overlay{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);  Cor escura com opacidade (ajuste conforme necessário) 
-    z-index: 1; /* Certifique-se de que o overlay esteja acima do conteúdo da página 
+    background-color: rgba(0, 0, 0, 0.5);  
+    z-index: 1; 
     
-}*/
+}
+
 
 /*---------- nav /home mobile ----------*/
 
@@ -161,33 +168,23 @@
 
     .mobileMenu {
         display: flex;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
       
     }
 
-
+   
 
     .classOpen {
         background-color: var(--secondary-color);
         padding: 1.5rem;
-         filter: drop-shadow(8px 8px 0px #F9A402); /*drop-shadow(10px 10px 0px #000); */
+        filter: drop-shadow(8px 8px 0px #F9A402); /*drop-shadow(10px 10px 0px #000); */
         border: var(--primary-color) solid 3px;
-       
-        transition: margin-left 0.3s ease;
-        
-        /* width: 100%;
-        position: fixed;
-         transform: translateX(0); */
+    
     }
     .menuContainer{
         margin: auto;
-        
     }
-    /*.classClose {
-         transform: translateX(+100%); 
-
-    }*/
-
+    
     .hamburgerMenu {
         background-color: var(--bg-color);
         display: flex;
@@ -195,7 +192,7 @@
         align-items: flex-end;
         width: 100%;
         position: fixed;
-        transition: left 0.3s ease;
+        
     }
 
     .hamburgerMenuOpen{
@@ -207,7 +204,7 @@
         padding: 0rem 0rem 3rem 0;
         position: fixed;
         z-index: 1000;
-        transition: left 0.3s ease;
+        
         height: auto;
     }
 
