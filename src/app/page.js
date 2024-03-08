@@ -21,19 +21,6 @@ export default function Home() {
 
   return (<>
     <Head>
-
-
-    
-{/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-N0H49M48DF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N0H49M48DF');
-</script> */}
-
-
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" type="image/x-icon" href="./icons/favicon.ico" />
     </Head>
@@ -92,7 +79,7 @@ export default function Home() {
         <div className={styles.about_meContent}>
           <div className={styles.about_meTxt}>
             <p>
-              My name is Evellyn. I'm a person who tries to see the good side of situations. When things don't go to plan, I think about how to get around them, concentrating on solving the problem. <br />
+              My name is Evellyn. I'm a person who tries to see the good side of situations. When things don't go according to plan, I think about how to get around them, concentrating on solving the problem. <br />
             </p>
 
           </div>
@@ -110,7 +97,7 @@ export default function Home() {
             </div>
             <div className={styles.skillsAppsContainer}>
               <h3>My Toolbox & Things I Can Do</h3>
-              <p>The skills, tools and technologies I use to at now:</p>
+              <p>The skills, tools, and technologies I use at the moment:</p>
 
               <div className={styles.skillsApps}>
                 <div className={styles.appsReact}><img src="./icons/logo-react.png" alt="" /></div>
