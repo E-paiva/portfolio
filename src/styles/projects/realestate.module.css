@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* 
+  --primary-color: #AF8C53;
+  
+  --bg-color: #252926;
+  --bg-color-2: #343935;
+*/
+
+
+
+.bannerLogo {
+  width: 100px;
+  margin: 1rem;
+  font-size: 1rem;
+  color: #AF8C53;
+}
+
+.banner,
+.cta {
+  background-color: #252926;
+  color: #AF8C53;
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.bannerContent {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 2rem;
+}
+
+.bannerbuttons {
+  display: flex;
+}
+
+.bannerTitle {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-family: "Forum", serif;
+  font-size: 5rem;
+}
+
+.bannerImageContainer {
+  overflow: hidden;
+  flex: 1;
+
+}
+
+.bannerImageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .bannerImage {
+  height: 100%;
+  
+  
+ 
+ 
+} */
+
+.ctaContent {
+  max-width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.ctaTitle {
+  margin: 6rem 6rem 3rem 6rem;
+  font-family: "Forum", serif;
+  font-size: 3rem;
+}
+
+.ctabutton {
+  margin: 0 6rem;
+}
+
+.sale {
+
+
+  background-color: #252926;
+  font-family: "Forum", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saleTitle h2 {
+  padding: 3rem 0 2rem;
+  color: #AF8C53;
+  font-family: "Forum", serif;
+  font-size: 3rem;
+}
+
+.saleCardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+  width: 100%;
+}
+
+.rent {
+  background-color: #343935;
+  font-family: "Forum", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonialCard p {
+  padding: 2.5rem 0;
+}
+
+.testimonialCard {
+  max-width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  color: #AF8C53;
+  font-family: "Raleway", sans-serif;
+  border-top: 1px #AF8C53 solid;
+}
+
+.testimonial {
+  background-image:
+    linear-gradient(#343935d7, #343935d7),
+    url(/projects-icons/landingpage/realestate/bg.jpg);
+  background-position: center;
+
+  /* background-image: linear-gradient(#f69d3c, #3f87a6) url(/projects-icons/landingpage/realestate/bg.jpg);*/
+  background-size: cover;
+
+
+  font-family: "Forum", serif;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.testimonial h2 {
+  font-family: "Forum", serif;
+  color: #AF8C53;
+}
+
+.testimonialTitle {
+  padding: 3rem 6rem;
+
+}
+
+.testimonialContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around
+}
+
+.contact{
+  background-color: #252926;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contactContent h2{
+  font-family: "Forum", serif;
+  color: #AF8C53;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hoursContainer {
+  max-width: 30%;
+
+}
+
+.hours{
+  background-color: #AF8C53;
+  font-family: "Raleway", sans-serif;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.maps {
+  border: none;
+  background-color: #AF8C53;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.contactFormContainer{
+  color: #AF8C53;
+  font-family: "Raleway", sans-serif;
+  width: 20%;
+}
+
+.inputContainer{
+  background-color: transparent;
+  border: #AF8C53 solid 1px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 1.5rem;
+  height: 2rem;
+}

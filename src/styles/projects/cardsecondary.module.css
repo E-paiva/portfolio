@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cardContainer{
+   max-width: 250px;
+    height: 400px;
+    
+    
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+/*.cardImage{
+     overflow: hidden;
+    object-fit: fill;
+    flex: 1;
+} */
+
+.cardImg img {
+    width: 100%;
+    height: auto;
+
+   
+}
+
+.cardContent{
+    margin: 1rem 0;
+    border-bottom: 1px #AF8C53 solid;
+    border-top: 1px #AF8C53 solid;
+    color: #AF8C53;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContent h4{
+    font-family: "Forum", serif;
+    font-size: 1.3rem;
+    padding: 0.8rem 0;
+}
+
+.cardContent p{
+    font-size: 0.8rem;
+}
