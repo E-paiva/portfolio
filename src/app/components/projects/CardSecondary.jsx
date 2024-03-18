@@ -16,7 +16,7 @@ export default function CardSecondary() {
 
     return <div className={styles.cardContainer}>
         <div className={styles.cardImg}>
-            <img src="../projects-icons\landingpage\realestate\realestateAssets2.jpg" alt="" />
+            <img src="/projects-icons\landingpage\realestate\realestateAssets2.jpg" alt="" />
         </div>
         
         <div className={styles.cardContent}>

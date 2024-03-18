@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .cardContainer{
-   max-width: 250px;
+ width: 250px;
     height: 400px;
     
     
     display: flex;
     flex-direction: column;
+    flex: none;
    
 
 }

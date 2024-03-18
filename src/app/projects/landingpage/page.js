@@ -3,9 +3,8 @@ import LinkButton from "@/app/components/LinkButton"
 import CardSecondary from "@/app/components//projects/CardSecondary"
 import styles from "@/styles/projects/realestate.module.css"
 
+
 export default function Landingpage() {
-
-
 
 
 
@@ -48,6 +47,7 @@ export default function Landingpage() {
                 <CardSecondary />
                 <CardSecondary />
                 <CardSecondary />
+                            
 
             </div>
         </section>

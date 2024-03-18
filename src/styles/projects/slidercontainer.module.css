@@ -1,0 +1,26 @@
+.pageContainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    max-width: 75vw;
+    background-color: black;
+}
+
+.carousel{
+display: flex;
+overflow-x: auto;
+scroll-behavior: smooth;
+}
+
+.item{
+    margin:0 1.5rem;
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+}
